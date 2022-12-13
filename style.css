@@ -7,6 +7,7 @@
 
 body {
     background-image: url("Images/background.png");
+    background-size: cover;
 }
 
 /* navbar css starts here(normal) */
@@ -72,6 +73,7 @@ nav{
     height: 55vh;
     margin-left: 35vw;
     margin-top: 3vh;
+    margin-bottom: 2vh;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
@@ -181,15 +183,6 @@ footer{
 
 }
 
-/* .resume_pdf button{
-    font-size: 1.5rem;
-    font-style: italic;
-    cursor: pointer;
-    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.2);
-    background: #c1aba6;
-    margin-bottom: 2vh;
-    margin-left: 1vw;
-} */
 .resume_pdf{
     text-align: center;
     margin-bottom: 2vh;
@@ -197,9 +190,6 @@ footer{
 .resume_pdf p{
     font-size: 2rem;
 }
-
-
-
 
 
 /* resume css ends here */
@@ -367,7 +357,7 @@ footer{
 /* Nav-bar contents are correctly spaced in small screen */
 @media screen and (max-width: 1695px) {
     .nav_links{
-        width: 200px;
+        width: 92vw;
     }
     .contact_content{
         width: 30vw;
@@ -383,6 +373,7 @@ footer{
 /* navbar logic starts here(smaller screen) */
     /* style nav bar for smaller screen */
     .nav_links{
+        width: 200px;
         position: absolute;
         height: 92vh;
         top: 8vh;
@@ -484,7 +475,7 @@ footer{
 /* This class shows the nav-bar which is designed previously(in the media querry) and kept hidden */
 .nav_active{
     /* transform: translateX(0%); */
-    left: 180px;
+    left: 200px;
 }
 
 /* adding animation for the contents in the navbar */
