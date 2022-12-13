@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Mahdi Mahi</h4>
+        </div>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="things_learned.html">Things I learned</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+	<main>
+        <div class="album_p">
+            <p>I love to travel. In this album, I am including some pictures from all of the states I have been to:</p>
+        </div>
+        <div id="app1">
+            <div class="album_row">
+                <div class="album_column">
+                    <img @click="expand_image('Images/barharbour.jpg')" src="Images/barharbour.jpg" alt="barharbour">
+                    <div class="img_text">Bar Harbour, MN</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/boston.jpg')" src="Images/boston.jpg" alt="boston">
+                    <div class="img_text">Boston, MA</div>
+                </div>
+                
+                <div class="album_column">
+                    <img @click="expand_image('Images/nyc.jpg')" src="Images/nyc.jpg" alt="nyc">
+                    <div class="img_text">New York City, NY</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/nj.jpg')" src="Images/nj.jpg" alt="nj">
+                    <div class="img_text">New Jersey</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/pocono.jpg')" src="Images/pocono.jpg" alt="pocono">
+                    <div class="img_text">Pocono,PA</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/philly.png')" src="Images/philly.png" alt="philly">
+                    <div class="img_text">Philadelphia, PA</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/washington.png')" src="Images/washington.png" alt="washington">
+                    <div class="img_text">Washington DC</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/charlotte.jpg')" src="Images/charlotte.jpg" alt="charlotte">
+                    <div class="img_text">Charlotte, NC</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/charleston.jpg')" src="Images/charleston.jpg" alt="charleston">
+                    <div class="img_text">Charleston, SC</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/atlanta.jpg')" src="Images/atlanta.jpg" alt="atlanta">
+                    <div class="img_text">Atlanta, GA</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/palmbeach.jpg')" src="Images/palmbeach.jpg" alt="palmbeach">
+                    <div class="img_text">Palmbeach, FL</div>
+                </div>
+    
+                <div class="album_column">
+                    <img @click="expand_image('Images/stlouis.jpg')" src="Images/stlouis.jpg" alt="stlouis">
+                    <div class="img_text">Saint Louis, MI</div>
+                </div>
+    
+                <div class="album_column">
+                    <img  @click="expand_image('Images/keywest.jpg')" src="Images/keywest.jpg" alt="keywest">
+                    <div class="img_text">Keywest, FL</div>
+                </div>
+            </div>
+    
+            <div class="full_img">
+                <img :src = "img_src">
+            </div>
+        </div>
+        
+        
+
+
+	</main>
+    <footer>
+		<h3>Website made by: Mahdi Mahi</h3>
+	</footer>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="album.js"></script> 
+    <script src="navbar.js"></script> 
+</body>
+</html>

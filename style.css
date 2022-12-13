@@ -1,0 +1,528 @@
+/* Resetting the page removing unwanted space*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(160, 160, 182);
+}
+
+/* navbar css starts here(normal) */
+/* Using flexbox for navbar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(131, 80, 80, 0.822);
+    font-family: 'Merriweather', serif;
+}
+
+/* Style logo */
+.logo{
+    color: rgb(231, 230, 230);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+}
+
+/* Using flexbox for nav-bar */
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+/* Styling each links in nav-bar */
+.nav_links a{
+    color: rgb(231, 230, 230) ;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    
+}
+
+/* removing bullet points */
+.nav_links li{
+    list-style: none;
+}
+
+/* will be used for media querryb */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 3vw;
+    height: 0.2vw;
+    background-color: rgb(231, 230, 230);
+    margin-top: 1vh;
+    transition: 0.3s;
+}
+
+/* navbar css ends */
+
+
+/* index css starts here */
+/* style profile picture */
+.profile{
+    width: 25vw;
+    height: 55vh;
+    margin-left: 35vw;
+    margin-top: 3vh;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* style linkedin link */
+.linkedin{
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 2vh;
+}
+
+/* styles the paragraphs */
+.about_me p{
+    font-size: 2rem; 
+    text-align: left;
+    margin-left: 2vw;
+    font-style: italic;
+    padding-bottom: 5vh;
+}
+
+/* add styles in the video */
+iframe{
+    width: 60vw;
+    height: 50vh;
+    margin-left: 20vw;
+}
+
+/* footers properties */
+footer{
+    text-align: center;
+    width: 98vw;
+    bottom: 0;
+
+}
+/* index css ends here */
+
+/* education fetch css starts here */
+.education_fetch_p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+
+  }
+
+#display_element{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #display_element button {
+    font-size: 2rem;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+    background: #c1aba6;
+    padding-right: 1vw;
+  }
+
+  #display_element h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #display_element p {
+    font-size: 2rem;
+  }
+
+/* education fetch css ends here */
+
+/* resume css starts here */
+.experience{
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+    margin-right: 1vw;
+}
+
+.experience h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.experience h3{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.experience ul{
+    margin-bottom: 3vh;
+}
+
+.resume_img{
+    width: 20vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40vw;
+    
+    /* margin-left: 35vw;
+    margin-bottom: 2vw; */
+
+}
+
+/* .resume_pdf button{
+    font-size: 1.5rem;
+    font-style: italic;
+    cursor: pointer;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.2);
+    background: #c1aba6;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+} */
+.resume_pdf{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.resume_pdf p{
+    font-size: 2rem;
+}
+
+
+
+
+
+/* resume css ends here */
+
+/* skills image style starts here */
+.skill_img{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
+}
+
+.skill_img img{
+    width: 10vw;
+    height: 20vh;
+}
+
+.skill_description {
+    text-align: center;
+}
+
+/* skills image style ends here */
+
+/* Things I learned css starts here */
+.learned_container{
+    margin: 0;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .learned_container img{
+    display: table-cell; 
+    vertical-align: middle;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .learned_list{
+    margin-bottom: 3vh;
+  }
+
+.learned_p{
+    font-size: 2rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.learned_p p{
+    margin-bottom: 2vw;
+}
+
+/* Things I learned css ends here */
+
+/* album css starts here */
+.album_p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-left: 2vw;
+}
+
+/* style the row's small images */
+
+.album_row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1vw;
+}
+
+
+.album_column {
+    flex: 15vw;
+    max-width: 18vw;
+    padding: 0 1vw;
+}
+
+.album_column img{
+    margin-top: 1vh;
+    vertical-align: middle;
+    width: 100%;
+    height: 10vw;
+}
+
+.img_text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.album_column img{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.album_column img:hover{
+    opacity: 1;
+}
+
+/* style the full image when selected */
+.full_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-left: 25vw;
+    margin-bottom: 3vw;
+    width: 50vw;
+    height: 50vw;
+}
+
+
+
+/* album css ends here */
+
+/* contact design starts here */
+
+.contact_container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.contact_content{
+    width: 15vw;
+    height: 30vh;
+    background: rgb(158, 113, 111);
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+#message {
+    height: 10vh;
+}
+
+.inputform{
+    padding-bottom: .5vh;
+}
+
+/* contact design ends here */
+
+
+
+/* applying media querry for smaller screen */
+
+/* Nav-bar contents are correctly spaced in small screen */
+@media screen and (max-width: 1695px) {
+    .nav_links{
+        width: 80vw;
+    }
+    .contact_content{
+        width: 30vw;
+        height: 30vh;
+
+    }
+    
+
+
+}
+
+@media screen and (max-width: 800px) {
+/* navbar logic starts here(smaller screen) */
+    /* hide the nav bar */
+    body{
+        overflow-x: hidden;
+    }
+
+
+    /* style nav bar for smaller screen */
+    .nav_links{
+        position: absolute;
+        right: 0vw;
+        height: 92vh;
+        top: 8vh;
+        background-color:  rgba(131, 80, 80, 0.822);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav_links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    /* navbar css ends here(smaller screen) */
+
+    /* index css starts here(smaller screen) */
+    .profile{
+        width: 100vw;
+        height: 70vh;
+        margin-left: 0vw;
+        margin-top: 0vh;
+    }
+
+    .about_me p{
+        font-size: 1rem; 
+        text-align: left;
+        margin-left: 1vw;
+        font-style: italic;
+   }
+      /* resize video */
+    iframe{
+        width: 100vw;
+        height: 50vh;
+        margin-left: 0vw;
+    }
+    /* index css ends here(smaller screen) */
+
+    /* resume css starts here(smaller screen) */
+    .experience{
+        margin-left: 4vw;
+        margin-right: 1vw;
+    }
+    .skills_img{
+        width: 100vw;
+        height: 30vh;
+        margin-left: 0vw;
+    }
+
+    /* resume css ends here(smaller screen) */
+
+
+
+    /* skills image style starts here(smaller screen) */
+    
+    .skill_img img{
+        margin-left: 20vw;
+        width: 35vw;
+        height: 40vh;
+    }
+    /* skills image style ends here(smaller screen) */
+    
+    /* album style starts here(smaller screen) */
+    .album_column {
+        flex:100%;
+        max-width: 100%;
+ 
+      }
+
+    .album_column img{
+        opacity: 1;
+        height: 60vh;
+    }
+
+    .full_img{
+        display: none;
+    }
+
+    /* album style ends here(smaller screen) */
+
+    /* contact form style */
+    .contact_content{
+        width: 70vw;
+        height: 40vh;
+
+    }
+
+
+}
+
+/* navbar's burger and animation starts */
+/* This class shows the nav-bar which is designed previously(in the media querry) and kept hidden */
+.nav_active{
+    transform: translateX(0%);
+}
+
+/* adding animation for the contents in the navbar */
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.changeshape .line1{
+    transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.changeshape .line2{
+    opacity: 0;
+}
+
+.changeshape .line3{
+    transform: rotate(45deg) translate(-6px,-6px);
+}
+/* navbar's burger and animation */
+
+   

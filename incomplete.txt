@@ -1,0 +1,6 @@
+add pdf resume link in the resume.html
+add transition shadow in pdf links(button in resume)
+remove button decoration from resume download button
+add animation in all pages' p tag.
+add niche theke upore utha animation with explanation in the skills image
+grid yaken from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp

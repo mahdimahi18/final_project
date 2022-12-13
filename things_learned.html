@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Mahdi Mahi</h4>
+        </div>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="things_learned.html">Things I learned</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+	<main>
+        <div class="learned_p">
+            <p class>I have learned everything I know about web-development from this class. I never had any experience on this before. 
+                Important topics I learned in this class are HTML, CSS, Javascript, writing .json file and fetch that data using API, and Vue framework. 
+                Here I will demonstrate one application I learned using vue framework:</p>
+            <p>In this project, the picture changes to a different picture when the user click on them. In the page, normally 2 pictures(current state on New York and Tokyo) are shown with one boolen component. When the
+                user hover on them, Vue use that hover as an input and change the boolean value of the image component which is attached to another picture. This can be done very simply with much less lines of code. Hover over the following images to try it yourself:
+            </p>
+
+        </div>
+
+
+        <div id="app" class="learned_container">
+            <h2>New York after and before</h2>
+            <img @mouseover="hover_manhattan = true" 
+                 @mouseleave="hover_manhattan = false" 
+                 v-if="!hover_manhattan" src="Images/manhattan_after.PNG" alt="Manhattan After">
+            <img @mouseover="hover_manhattan = true" 
+                 @mouseleave="hover_manhattan = false" 
+                 v-else src="Images/manhattan_before.PNG" alt="Manhattan Before">
+    
+            <h2>Tokyo after and before</h2>
+            <img @mouseover="hover_tokyo = true" 
+                 @mouseleave="hover_tokyo = false" 
+                 v-if="!hover_tokyo" src="Images/tokyo_now.PNG" alt="Tokyo After">
+            <img @mouseover="hover_tokyo = true" 
+                 @mouseleave="hover_tokyo = false" 
+                 v-else src="Images/tokyo_before.PNG" alt="Tokyo Before">
+        </div>
+
+	</main>
+    <footer>
+		<h3>Website made by: Mahdi Mahi</h3>
+	</footer>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="things_learned.js"></script> 
+    <script src="navbar.js"></script> 
+</body>
+</html>
